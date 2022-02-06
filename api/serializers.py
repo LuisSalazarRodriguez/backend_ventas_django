@@ -26,3 +26,26 @@ class ProductoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Producto
         fields = '__all__'
+               
+class UbigeoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Ubigeo
+        fields = '__all__'
+        
+class Tipo_documentoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Tipo_documento
+        fields = '__all__'
+class ClientesSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Clientes
+        fields = '__all__'
+class PedidoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Pedido
+        fields = '__all__'
+        
+class PedidoDetalleSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PedidoDetalle
+        fields = '__all__'
